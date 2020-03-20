@@ -1,0 +1,22 @@
+@import '../../../scss/variables', '../../../scss/mixin';
+
+.signup {
+  &__text {
+    font-size: $text-l;
+    margin-bottom: 4rem;
+    color: $green1;
+  }
+  &__notify {
+    position: fixed;
+    left: 38vw;
+    top: 27rem;
+    max-width: 290px;
+    @include max-screen(1250px) {
+      left: 42vw;
+    }
+    @include max-screen(1024px) {
+      position: initial;
+      margin: 3.5rem 0;
+    }
+  }
+}

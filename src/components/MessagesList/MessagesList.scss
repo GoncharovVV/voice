@@ -1,0 +1,103 @@
+@import '../../scss/variables', '../../scss/mixin';
+.message {
+  &__list {
+    max-width: 790px;
+    width: 100%;
+    // padding-right: 4.2rem;
+    padding-top: 2rem;
+    margin: 0 auto;
+    @include max-screen(1530px) {
+      padding-right: 4.2rem;
+    }
+    @include max-screen(940px) {
+      padding-right: 0;
+    }
+  }
+  &__item{
+    @include flex($align: flex-end);
+    margin-bottom: 16px;
+    &_platform {
+      justify-content: flex-end;
+      .message__text {
+        border-bottom-right-radius: 0;
+        max-width: 390px;
+        background-color: $blue4;
+        color: $white1;
+        // padding: 2.4rem;
+      }
+    }
+    &_edit {
+      justify-content: flex-end;
+      .message__title {
+        color: $blue1;
+        margin-bottom: 12px;
+      }
+      .message__text {
+        max-width: 390px;
+      }
+    }
+  }
+  &__title {
+    font-weight: $fw7;
+    margin-bottom: 8px;
+    padding: 2.4rem 2.4rem 0;
+  }
+  &__logo-holder {
+    flex-shrink: 0;
+    width: 4.6rem;
+    height: 4.6rem;
+    color: $white1;
+    border-radius: 50%;
+    overflow: hidden;
+    @include flex($just: center, $align: center);
+  }
+  &__text {
+    border-radius: 2rem;
+    font-size: 16px;
+    width: 100%;
+    min-height: 84px;
+    &_user {
+      border-bottom-left-radius: 0;
+      background-color: $grey6;
+      max-width: 300px;
+      padding: 2.4rem;
+      .message__title {
+        padding: 0;
+      }
+    }
+    &-value {
+      padding: 0 2.4rem 2.4rem;
+    }
+  }
+  &__button {
+    align-self: center;
+    flex-shrink: 0;
+    border: $edit-msg-border;
+    width: 40px;
+    height: 40px;
+    @include flex($just: center, $align: center);
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 17px;
+    color: $dark1;
+    transition: color .3s;
+    @include min-screen(1024px) {
+      &:hover {
+        color: $dark0;
+      }
+    }
+  }
+  &__textarea{
+    border: $textarea-msg-border;
+    resize: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px 2.4rem;
+  }
+  &__check-icon {
+    font-size: 22px;
+  }
+  &__edit-icon {
+    font-size: 17px;
+  }
+}

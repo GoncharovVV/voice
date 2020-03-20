@@ -1,0 +1,35 @@
+@mixin flex($align: null, $just: null, $wrap: null, $dir: null, $align-c: null, $flex: flex ) {
+	display: $flex;
+	@if $align !='' {
+		align-items: $align;
+	} 
+	@if $just !='' {
+		justify-content: $just;
+	}
+	@if $wrap !='' {
+		flex-direction: $dir;
+	}
+	@if $dir !='' {
+		flex-wrap: $wrap;
+	}
+	@if $align-c !='' {
+		align-content: $align-c;
+	}
+}
+@mixin max-screen($res)
+{
+  @media screen and (max-width: $res)
+  {
+    @content;
+  }
+}
+@mixin min-screen($res)
+{
+  @media screen and (min-width: $res)
+  {
+    @content;
+  }
+}
+
+
+

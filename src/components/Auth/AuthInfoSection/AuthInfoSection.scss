@@ -1,0 +1,25 @@
+@import '../../../scss/variables', '../../../scss/mixin';
+.auth__info {
+  width: 50%;
+  background: url('../../../assets/backgrounds/auth_background.svg') center 100px no-repeat,
+    linear-gradient(270.33deg, #00B58F 0.33%, #3B3A8F 99.55%);
+  // background: url('../../../assets/backgrounds/auth_background.svg') center 170px no-repeat,
+  //   linear-gradient(270.33deg, #00B58F 0.33%, #3B3A8F 99.55%);
+  padding: 8rem;
+  // font-family: $tk-century-gothic;
+  @include max-screen(1024px) {
+    width: 40%;
+    padding-left: 4rem;
+  }
+  @include max-screen(768px) {
+    width: 100%;
+    padding: 4rem 10px;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.auth__info-title {
+  color: $white1;
+  font-size: $title-l;
+  font-weight: $fw4;
+}

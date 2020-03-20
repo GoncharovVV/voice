@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Replica-Italic';
+  src: url('Replica-Italic.eot?#iefix') format('embedded-opentype'),  url('Replica-Italic.otf')  format('opentype'),
+	     url('Replica-Italic.woff') format('woff'), url('Replica-Italic.ttf')  format('truetype'), url('Replica-Italic.svg#Replica-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

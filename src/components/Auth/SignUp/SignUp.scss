@@ -1,0 +1,23 @@
+@import '../../../scss/variables', '../../../scss/mixin';
+.terms__link {
+  text-transform: none;
+  font-weight: $fw7;
+  font-size: $text-r;
+  color: $orange2;
+  @include min-screen(1024px) {
+    &:hover {
+      color: $orange3;
+    }
+  }
+}
+.terms-link__holder {
+  @include flex($align: baseline);
+  .form__bottom-text {
+    margin-right: 5px;
+  }
+}
+.form__row_checkbox {
+  .checkbox__holder{
+    margin-bottom: 3px;
+  }
+}

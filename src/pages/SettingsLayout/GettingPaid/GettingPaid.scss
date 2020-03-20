@@ -1,0 +1,55 @@
+@import '../../../scss/mixin', '../../../scss/variables';
+.amazon {
+  &-icon {
+    font-size: 33px;
+    color: $green1;
+  }
+  &-icon__holder {
+    margin-bottom: 16px;
+  }
+  &__link {
+    color: $green1;
+    font-size: $text-l;
+    display: inline-block;
+    @include flex($align: center);
+  }
+  &__link-icon {
+    margin-left: 10px;
+  }
+  &__text {
+    margin-bottom: 8px;
+  }
+}
+
+.paid {
+  &__link {
+    text-transform: initial;
+    margin-top: 10px;
+  }
+  &__row {
+    margin-bottom: 4rem;
+    max-width: 350px;
+    width: 100%;
+  }
+}
+.skill-id {
+  margin-left: 5px;
+  // @include flex($flex: inline-flex);
+  word-wrap: break-word;
+  display: inline-flex;
+  &__text {
+    line-height: 1.6;
+  }
+  &__copy {
+    color: $orange2;
+    font-size: 17px;
+    margin-left: 8px;
+    opacity: 1;
+    transition: opacity .3s;
+    @include min-screen(1024px) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

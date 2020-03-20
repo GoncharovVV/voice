@@ -1,0 +1,15 @@
+@import '../../../scss/variables', '../../../scss/mixin';
+.success-icon {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+.email__notify {
+  margin-bottom: 4rem;
+}
+.login__password-row {
+  margin-bottom: 14px;
+}
+.login__container {
+  flex-grow: 1;
+  @include flex($dir: column, $just: center);
+}

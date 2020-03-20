@@ -1,0 +1,69 @@
+@import '../../scss/mixin', '../../scss/variables';
+.aside-section {
+  &_right {
+    margin-left: auto;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    padding: 0 3rem;
+    @include max-screen(600px) {
+      max-width: 100%;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0px;
+      left: 0px;
+      z-index: 1;
+      width: 1px;
+      height: 80vh;
+      background: linear-gradient(
+        180.03deg,
+        #dedbdb 0%,
+        rgba(255, 255, 255, 0) 136.1%,
+        rgba(255, 255, 255, 0) 136.1%
+      );
+    }
+    .message__list {
+      padding: 3.2rem 0 1.6rem;
+    }
+    .message__logo-holder {
+      width: 32px;
+      height: 32px;
+    }
+    .message__logo-platform {
+      font-size: 22px;
+    }
+    .message__logo-user {
+      font-size: 17px;
+    }
+    .message__item {
+      position: relative;
+    }
+    .message__button {
+      // position: absolute;
+      // top: 0;
+      width: 32px;
+      height: 32px;
+      // margin-right: 0;
+      // z-index: 1;
+    }
+  }
+  &_hide-mobile {
+    @include max-screen(1250px) {
+      display: none;
+    }
+  }
+  &__text {
+    font-size: $text-m;
+  }
+  &__title {
+    font-size: $text-m;
+    font-weight: $fw7;
+    margin-bottom: 16px;
+  }
+}
+.voice-speaker__icon {
+  font-size: 28rem;
+  margin: 0 auto;
+}

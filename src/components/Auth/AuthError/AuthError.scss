@@ -1,0 +1,40 @@
+@import '../../../scss/mixin', '../../../scss/variables';
+.auth-error {
+  position: relative;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px 0;
+  background: rgba($color: $orange4, $alpha: 0.25);
+  color: $red2;
+  @include flex($align: flex-start);
+  &__close {
+    margin: -5px -5px 0 0;
+    color: $red1;
+    font-size: 12px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    @include min-screen(1024px) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__text {
+    flex-grow: 1;
+    color: $red2;
+    font-size: $text-r;
+    line-height: 20px;
+    padding-right: 10px;
+  }
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $red1;
+    @include flex($just: center, $align: center, $align-c: center);
+    color: $white1;
+    font-size: 22px;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+}

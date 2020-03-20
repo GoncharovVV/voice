@@ -1,0 +1,8 @@
+
+@font-face {
+font-family: 'Replica-Bold';
+src: url('Replica-Bold.eot?#iefix') format('embedded-opentype'),  url('Replica-Bold.otf')  format('opentype'),
+      url('Replica-Bold.woff') format('woff'), url('Replica-Bold.ttf')  format('truetype'), url('Replica-Bold.svg#Replica-Bold') format('svg');
+font-weight: normal;
+  font-style: normal;
+}

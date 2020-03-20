@@ -1,0 +1,172 @@
+@import '../../scss/variables', '../../scss/mixin';
+.card-list {
+  flex-grow: 1;
+  margin: 0 -1rem;
+  @include max-screen(940px) {
+    padding: 0;
+  }
+  &__holder {
+    flex-grow: 1;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.card-item {
+  width: calc(33.33% - 2rem);
+  margin: 0 1rem 2.4rem;
+  position: relative;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  @include max-screen(1400px) {
+    width: calc(50% - 2rem);
+  }
+  @include max-screen(1250px) {
+    width: calc(33.33% - 2rem);
+  }
+  @include max-screen(1024px) {
+    width: calc(50% - 2rem);
+  }
+  @include max-screen(940px) {
+    width: calc(33.33% - 2rem);
+  }
+  @include max-screen(768px) {
+    width: calc(50% - 2rem);
+  }
+  @include max-screen(520px) {
+    width: calc(100% - 1rem);
+  }
+  @include min-screen(1024px) {
+    &:hover {
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
+    }
+  }
+  border-radius: 15px;
+  border: 2px solid transparent;
+  &__selected {
+    border: 2px solid $blue1;
+    .card-item__link {
+      pointer-events: none;
+    }
+    .card-item__checked {
+      color: $blue1;
+    }
+    .card-item__check_border {
+      background-color: $blue1;
+      border-color: $blue1;
+    }
+  }
+  &__link {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    width: 100%;
+    &_checked {
+      border: 2px solid $blue1;
+    }
+    &_button {
+      padding-bottom: 56px;
+    }
+  }
+  &__play {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 11px 24px;
+    border-radius: 20px;
+    background-color: $orange2;
+    font-weight: bold;
+    font-size: $text-s;
+    text-transform: uppercase;
+    color: $white1;
+    transition: background-color 0.3s;
+    @include min-screen(1024px) {
+      &:hover {
+        background-color: $orange3;
+      }
+    }
+  }
+  &__checked {
+    color: $orange2;
+    font-size: $text-s;
+    font-weight: $fw7;
+    margin-bottom: 8px;
+  }
+  &__title {
+    font-size: $text-l;
+    color: $dark3;
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 16px;
+    border-radius: 20px;
+    background-color: $blue1;
+    position: relative;
+    &_transparent {
+      background-color: transparent;
+    }
+    &_tools {
+      border-radius: 10px;
+      width: 56px;
+      height: 56px;
+      background-color: $green1;
+    }
+  }
+  &__icon {
+    font-size: 35px;
+    color: $white1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    &_tool {
+      font-size: 24px;
+    }
+  }
+  &__check {
+    position: absolute;
+    top: 50px;
+    left: calc(50% + 26px);
+    transform: translateX(-50%);
+    z-index: 9;
+    width: 32px;
+    height: 32px;
+    pointer-events: all;
+    border-radius: 50%;
+    background-color: $blue1;
+    color: $white1;
+    @include flex($just: center, $align: center);
+    font-size: 17px;
+    &_border {
+      border: $checkCardBorder;
+      background-color: $white1;
+      right: -16px;
+    }
+  }
+}
+.card-list__tools {
+  .card-item__selected {
+    border: 2px solid transparent;
+  }
+  .card-item {
+    &.active {
+      border: 2px solid $blue1;
+      .card-item__link {
+        pointer-events: none;
+      }
+    }
+  }
+  .card-item__link {
+    pointer-events: all;
+  }
+}
+.icon__tool-cart {
+  font-size: 27px;
+}

@@ -1,0 +1,48 @@
+@import '../../scss/variables', '../../scss/mixin';
+.menu {
+  &__mobile {
+    width: 100%;
+    @include flex($align: center);
+    padding: 20px 10px 0;
+    margin-bottom: 6rem;
+    display: none;
+    align-self: flex-start;
+    @include max-screen(1150px) {
+      display: flex;
+      margin-bottom: 2rem;
+    }
+  }
+}
+.mobile__main-link {
+  margin-right: 20px;
+}
+.nav__logo {
+  font-size: 180px;
+  height: 0.2em;
+}
+.menu__actions_holder {
+  flex-grow: 1;
+}
+.nav__mobile-hidden {
+  display: none;
+  @include max-screen(940px) {
+    display: inline-block;
+  }
+}
+.burger {
+  font-size: 28px;
+  margin-right: 10px;
+  &.aside__opened {
+    &:after {
+      position: fixed;
+      content: '';
+      left: 0;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 88;
+    }
+  }
+}

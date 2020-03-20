@@ -1,0 +1,28 @@
+@import '../../../scss/variables';
+.done {
+  &__title {
+    margin-bottom: 8rem;
+  }
+  &__notify {
+    margin-bottom: 5rem;
+  }
+  &__text {
+    color: $green1;
+    font-size: $text-l;
+    margin-bottom: 4rem;
+  }
+  &__button {
+    padding: 1.8rem 3.2rem;
+    border-radius: 2.5rem;
+  }
+  &__mail {
+    text-decoration: underline;
+    color: $green1;
+    font-weight: 700;
+  }
+  &__icon {
+    color: $green1;
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+}

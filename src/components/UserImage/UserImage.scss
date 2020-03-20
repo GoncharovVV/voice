@@ -1,0 +1,13 @@
+@import '../../scss/variables';
+.message {
+  &__logo-user {
+    background-color: $burgundy;
+    font-size: 2.5rem;
+    margin-right: 10px;
+  }
+  &__logo-platform {
+    background-color: $blue1;
+    font-size: 3.3rem;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../scss/variables', '../../scss/mixin';
+.home {
+  &__title {
+    margin-bottom: 0;
+  }
+  &__container {
+    margin-left: -$leftSpaceForAsideMenu;
+    @include max-screen(1562px) {
+      margin-left: 0;
+    }
+  }
+  &__content {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    @include max-screen(1562px) {
+      margin: 0;
+    }
+  }
+
+  &__row {
+    width: 100%;
+    margin-bottom: 16px;
+    &_top{
+      padding-top: 16px;
+      margin-bottom: 4rem;
+      @include max-screen(940px) {
+        padding-top: 0;
+      }
+    }
+    // .high-bar__holder {
+    //   max-width: 530px;
+    // }
+  }
+  &__bar-holder {
+    flex: 1 1 400px;
+    margin-bottom: 8px;
+  }
+  &__info {
+    padding-top: 16px;
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,144 @@
+@import '../../scss/mixin', '../../scss/variables';
+
+.aside {
+  &__nav {
+    @include flex($dir: column);
+    border-top-right-radius: 30px;
+    min-height: 100vh;
+    color: $white1;
+    background-color: $dark3;
+    padding: 48px 0 4.4rem 16px;
+    width: 230px;
+    flex-shrink: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 99;
+    position: fixed;
+    @include max-screen(940px){
+      border-radius: 0;
+      padding: 10px 0 4.4rem 16px;
+      transform: translateX(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s, visibility .3s, transform .3s;
+      &.aside__opened {
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    .logout__button {
+      color: $white1;
+      font-size: $text-m;
+    }
+  }
+  &__logo {
+    font-size: 180px;
+    height: 0.2em;
+  }
+  &__logo-link {
+    margin-bottom: 7rem;
+    margin-left: 10px;
+    @include max-screen(1024px) {
+      margin-bottom: 4rem;
+    }
+  }
+  &__close {
+    margin: 0 10px 20px auto;
+    color: $white1;
+    font-size: 15px;
+    display: none;
+    @include max-screen(940px){
+      display: inline-block;
+    }
+  }
+}
+.menu {
+  flex-grow: 1;
+  &__link {
+    @include flex($align: center);
+    width: 100%;
+    color: $white1;
+    font-size: $text-m;
+    opacity: 1;
+    padding: 8px 16px;
+    border-radius: 20px 0 0 20px;
+    background-color: $dark3;
+    transition: opacity 0.3s, background-color .3s, color .3s;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: -50%;
+      display: block;
+      width: 20px;
+      height: 21px;
+      background: radial-gradient(circle at left bottom, $dark3 67%, $white1 69%);
+      .wrapper_home & {
+        background: radial-gradient(circle at left bottom, $dark3 67%, $white3 69%);
+      }
+      opacity: 0;
+      visibility: hidden;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -50%;
+      display: block;
+      width: 20px;
+      height: 21px;
+      z-index: 2;
+      background: radial-gradient(circle at left top, $dark3 67%, $white1 69%);
+      .wrapper_home & {
+        background: radial-gradient(circle at left top, $dark3 67%, $white3 69%);
+      }
+      opacity: 0;
+      visibility: hidden;
+    }
+    &.active {
+      background-color: $white1;
+      .wrapper_home & {
+        background-color: $white3;
+      }
+      color: $grey5;
+      &:before,
+      &:after{
+        opacity: 1;
+        visibility: visible;
+      }
+      .menu__arrow-icon {
+        transform: translateZ(0) rotate(90deg);
+      }
+    }
+    @include min-screen(1024px) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 20px;
+    font-size: 24px;
+  }
+  &__item {
+    margin-bottom: 10px;
+    @include max-screen(1024px) {
+      margin-bottom: 10px;
+    }
+  }
+  &__arrow-icon {
+    font-size: 9px;
+    margin-top: 3px;
+    transform: translateZ(0) rotate(0deg);
+    transition: transform .3s;
+  }
+  &__drop-text {
+    flex-grow: 1;
+    text-align: left;
+  }
+}
+

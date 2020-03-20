@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Replica-Regular';
+  src: url('Replica-Regular.eot?#iefix') format('embedded-opentype'),  url('Replica-Regular.otf')  format('opentype'),
+	     url('Replica-Regular.woff') format('woff'), url('Replica-Regular.ttf')  format('truetype'), url('Replica-Regular.svg#Replica-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

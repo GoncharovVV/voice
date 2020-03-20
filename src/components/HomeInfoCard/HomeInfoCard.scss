@@ -1,0 +1,16 @@
+@import '../../scss/variables', '../../scss/mixin';
+.info-card {
+  &__title {
+    font-size: $text-l;
+    font-weight: $fw7;
+  }
+  &__description {
+    font-size: $text-m;
+    padding: 8px 0;
+  }
+  &__link {
+    &-holder {
+      padding-top: 16px;
+    }
+  }
+}

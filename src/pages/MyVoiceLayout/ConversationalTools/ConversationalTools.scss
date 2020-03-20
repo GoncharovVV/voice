@@ -1,0 +1,22 @@
+@import '../../../scss/variables', '../../../scss/mixin';
+.tools {
+  &__row {
+    margin-bottom: 4rem;
+  }
+}
+.filters {
+  margin-bottom: 2.4rem;
+  &__title {
+    margin-right: 3.2rem;
+  }
+  .radio__holder,
+  .checkbox__holder {
+    margin-right: 16px;
+  }
+}
+.overlay__tool {
+  display: none;
+  @include max-screen(1250px) {
+    display: block;
+  }
+}

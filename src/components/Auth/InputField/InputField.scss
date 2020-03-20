@@ -1,0 +1,26 @@
+@import '../../../scss/variables', '../../../scss/mixin';
+
+.input__holder_shopify {
+  .form__input {
+    text-align: right;
+    padding-right: 142px;
+    color: $blue1;
+  }
+}
+.check-icon__holder {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $green1;
+  color: $white1;
+  font-size: 18px;
+  @include flex($just: center, $align: center);
+}
+.form__input_check {
+  padding-right: 45px;
+}

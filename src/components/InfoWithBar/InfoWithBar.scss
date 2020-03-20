@@ -1,0 +1,57 @@
+@import '../../scss/mixin', '../../scss/variables';
+.step-details {
+  padding-left: 16px;
+  &__title {
+    padding-right: 5px;
+    margin-bottom: 8px;
+  }
+  &__item {
+    padding-right: 3.2rem;
+    position: relative;
+    margin-right: 3.2rem;
+    margin-bottom: 8px;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: $grey7;
+      z-index: 1;
+    }
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+      &::before {
+        display: none;
+      }
+    }
+  }
+  &__icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $green1;
+    margin-top: 6px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    &_light {
+      background-color: $green0;
+    }
+  }
+  &__info {
+    font-size: $text-l;
+    max-width: 100px;
+    width: 100%;
+    &_text {
+      font-size: $text-r;
+      padding-top: 5px;
+      white-space: nowrap;
+      display: inline-block;
+    }
+    &_number {
+      padding-right: 5px;
+    }
+  }
+}

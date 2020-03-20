@@ -1,0 +1,23 @@
+@import '../../scss/mixin', '../../scss/variables';
+.schedule {
+  &__containser {
+    border: 1px solid $grey8;
+    border-radius: 5px;
+    padding: 16px;
+    color: $blue1;
+    @include flex($align: flex-start);
+    line-height: 1.4;
+  }
+  &__icon-holder {
+    @include flex($just: center, $align: center);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $grey8;
+    flex-shrink: 0;
+    margin-right: 16px;
+    font-size: 20px;
+    color: $blue1;
+  }
+ 
+}

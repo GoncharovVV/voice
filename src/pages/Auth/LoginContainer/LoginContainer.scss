@@ -1,0 +1,21 @@
+@import '../../../scss/mixin', '../../../scss/variables';
+.login__text {
+  font-size: $text-m;
+  color: $blue1;
+  line-height: 1.4;
+  a {
+    color: $blue1;
+    text-decoration: underline;
+    @include min-screen(1024px) {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.forgot__modal {
+  max-width: 540px;
+  @include max-screen(1024px) {
+    max-width: 100%;
+  }
+}

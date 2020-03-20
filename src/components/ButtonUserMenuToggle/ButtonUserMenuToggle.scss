@@ -1,0 +1,33 @@
+@import '../../scss/mixin', '../../scss/variables';
+.user__burger {
+  background-color: $burgundy;
+  color: $white1;
+  @include flex($just: center, $align: center);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 18px;
+  &_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+  }
+  &_opened {
+    &::before {
+      position: fixed;
+      content: '';
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+    }
+  }
+}

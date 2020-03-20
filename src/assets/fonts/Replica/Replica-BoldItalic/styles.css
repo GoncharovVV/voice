@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Replica-BoldItalic';
+  src: url('Replica-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('Replica-BoldItalic.otf')  format('opentype'),
+	     url('Replica-BoldItalic.woff') format('woff'), url('Replica-BoldItalic.ttf')  format('truetype'), url('Replica-BoldItalic.svg#Replica-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

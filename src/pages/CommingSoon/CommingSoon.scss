@@ -1,0 +1,13 @@
+.fix-icon {
+  font-size: 32px;
+}
+.notify {
+  &-static__icon {
+    margin-bottom: 20px;
+  }
+  &__coming {
+    padding-top: 2rem;
+    max-width: 370px;
+    width: 100%;
+  }
+}

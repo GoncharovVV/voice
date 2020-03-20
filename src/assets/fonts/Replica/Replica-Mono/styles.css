@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Replica-Mono';
+  src: url('Replica-Mono.eot?#iefix') format('embedded-opentype'),  url('Replica-Mono.otf')  format('opentype'),
+	     url('Replica-Mono.woff') format('woff'), url('Replica-Mono.ttf')  format('truetype'), url('Replica-Mono.svg#Replica-Mono') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

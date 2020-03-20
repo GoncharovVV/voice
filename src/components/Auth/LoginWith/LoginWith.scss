@@ -1,0 +1,23 @@
+@import '../../../scss/mixin', '../../../scss/variables';
+
+.login-with {
+  @include flex($align: baseline, $wrap: wrap);
+  color: $dark0;
+  &__button {
+    margin: 0 2rem;
+    text-transform: uppercase;
+    font-weight: $fw9;
+    letter-spacing: 1px;
+    color: $blue1;
+    transition: color .3s;
+    @include min-screen(1024px) {
+      &:hover {
+        color:$blue3;
+      }
+    }
+  }
+  &__text {
+    margin-right: 2rem;
+    font-size: $text-m;
+  }
+}

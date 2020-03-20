@@ -1,0 +1,82 @@
+@import '../../../scss/mixin', '../../../scss/variables';
+.store {
+  &__logo-holder {
+    width: 100%;
+    max-width: 1130px;
+    padding: 4.8rem 0 0;
+    margin: 0 auto 8rem;
+    @include max-screen(1240px) {
+      padding: 3rem 0 0;
+      margin: 0 auto 5rem;
+    }
+    .icon__logo {
+      margin: 0;
+    }
+    // @include max-screen(1024px) {
+    //   padding: 4.8rem 0 0;
+    //   margin: 0 auto 6rem;
+    // }
+  }
+  &__container {
+    width: 100%;
+    padding-bottom: 4rem;
+    flex-grow: 1;
+    @include flex($just: center);
+    @include max-screen(1240px) {
+      padding-bottom: 3rem;
+    }
+  }
+  &__content {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    flex-grow: 1;
+    @include flex($dir: column);
+  }
+  &__notify {
+    max-width: 410px;
+    margin: 0 auto 4rem;
+    @include max-screen(1240px) {
+      margin: 0 auto 3rem;
+    }
+    .notify-static__icon {
+      margin-bottom: 16px;
+    }
+  }
+  &__title {
+    margin-bottom: 4rem;
+    @include max-screen(1240px) {
+      margin-bottom: 2rem;
+    }
+  }
+  &-icon {
+    font-size: 36px;
+    margin: 0 auto;
+  }
+  &-icon__step1 {
+    font-size: 25.7rem;
+    margin: 0 auto;
+  }
+  &__animation {
+    flex-grow: 1;
+    @include flex($just: center, $align: center, $align-c: center);
+    margin-bottom: 8rem;
+    @include max-screen(1150px) {
+      margin-bottom: 5rem;
+    }
+  }
+  &__error {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__link {
+    color: $blue1;
+  }
+}
+.main_store {
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  padding: 0 10px;
+}

@@ -1,0 +1,22 @@
+@import '../../../scss/mixin';
+
+.icon-uppload_21,
+.icon-uppload_23 {
+  font-size: 25.7rem;
+  @include max-screen(900px) {
+    font-size: 20rem;
+  }
+  @include max-screen(580px) {
+    display: none;
+  }
+}
+.icon-uppload_22 {
+  font-size: 39.2rem;
+  height: 0.7em;
+  @include max-screen(900px) {
+    font-size: 34rem;
+  }
+  @include max-screen(580px) {
+    font-size: 43rem;
+  }
+}

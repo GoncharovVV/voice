@@ -1,0 +1,21 @@
+@import '../../../scss/variables', '../../../scss/mixin';
+.general {
+  &__content {
+    width: 100%;
+    padding-right: 4rem;
+    @include max-screen(1250px) {
+      padding-right: 10px;
+    }
+    @include max-screen(940px) {
+      padding-right: 0;
+    }
+  }
+  &__cart-icon {
+    font-size: 29px;
+  }
+  &__text {
+    font-size: $text-r;
+    line-height: 1.5;
+    padding-top: 8px;
+  }
+}

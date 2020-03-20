@@ -1,0 +1,41 @@
+@import '../../scss/variables', '../../scss/mixin';
+.terms {
+  &__container {
+    max-height: 60vh;
+    overflow-y: scroll;
+    padding-right: 5px;
+    width: 100%;
+    @include max-screen(1024px) {
+      max-height: calc(100vh - 170px);
+    }
+    a {
+      color: $blue1;
+      transition: color .3s;
+      @include min-screen(1024px) {
+        &:hover {
+          color: $blue3;
+        }
+      }
+    }
+  }
+  &__title {
+    font-size: $title-s;
+    margin-bottom: 10px;
+  }
+  &__text {
+    margin-bottom: 10px;
+    font-size: $text-m1;
+  }
+  &__part {
+    margin-bottom: 10px;
+  }
+  &__button-holder {
+    text-align: center;
+  }
+}
+.button__submit_terms {
+  width: auto;
+  display: inline-block;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}

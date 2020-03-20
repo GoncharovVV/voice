@@ -1,0 +1,11 @@
+@import "../../scss/variables", "../../scss/mixin";
+.icon__logo {
+  font-size: 150px;
+  height: 0.2em;
+}
+.column {
+  @include flex($align: flex-start);
+}
+.column__half {
+  width: 50%;
+}

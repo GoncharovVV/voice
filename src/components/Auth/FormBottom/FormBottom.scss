@@ -1,0 +1,14 @@
+@import '../../../scss/mixin', '../../../scss/variables';
+.form__bottom {
+  @include flex($align: baseline, $wrap: wrap);
+  .link {
+    font-weight: bold;
+    font-size: $text-r;
+  }
+}
+.form__bottom-text {
+  font-size: $text-m;
+  font-weight: $fw7;
+  color: $dark2;
+  margin-right: 10px;
+}

@@ -1,0 +1,4 @@
+@import '../../../scss/mixin';
+.upload__steps {
+  @include flex($align: center, $wrap: wrap, $just:center);
+}

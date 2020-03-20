@@ -1,0 +1,20 @@
+@import '../../scss/variables', '../../scss/mixin';
+.sub-title__container {
+  margin-bottom: 2rem;
+}
+.sub-title {
+  font-size: $text-m;
+  padding-right: 70px;
+  position: relative;
+  margin-bottom: 2rem;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    width: 60px;
+    height: 2px;
+    background-color: $dark2;
+  }
+}

@@ -1,0 +1,101 @@
+//font family
+$ReplBold: 'Replica-Bold', sans-serif;
+$ReplBoldItalic: 'Replica-BoldItalic', sans-serif;
+$ReplItalic: 'Replica-Italic', sans-serif;
+$ReplLight: 'Replica-Light', sans-serif;
+$ReplLightItalic: 'Replica-LightItalic', sans-serif;
+$ReplMono: 'Replica-Mono', sans-serif;
+$ReplRegular: 'Replica-Regular', sans-serif;
+$ReplicaProRegular: 'ReplicaPro-Regular', sans-serif;
+
+
+$Acumin: 'acumin-pro', sans-serif;
+$AcuminCondensed: 'acumin-pro-condensed', sans-serif;
+$Acumin-extra-condensed: 'acumin-pro-extra-condensed', sans-serif;
+$Acumin-semi-condensed: 'acumin-pro-semi-condensed', sans-serif;
+$Acumin-wide: 'acumin-pro-wide', sans-serif;
+
+// font size
+$title-l: 45px;
+$title-m: 38px;
+$title-m1: 26px;
+$title-s: 20px;
+
+$text-l2: 20px;
+$text-l: 18px;
+$text-m: 16px;
+$text-m1: 15px;
+$text-r: 14px;
+$text-s1: 13px;
+$text-s: 12px;
+
+// font weight
+$fw3: 300;
+$fw4: 400;
+$fw5: 500;
+$fw7: 700;
+$fw8: 800;
+$fw9: 900;
+
+// colors
+$blue1: #3B3A8F;
+$blue2: rgb(51, 52, 91);
+$blue3: #456CE5;
+$blue4: #3E85F7;
+
+$white1: #FFFFFF;
+$white2: #FCFEFF;
+$white3: #E5E5E5;
+
+$dark0: #000000;
+$dark1: #324A61;
+$dark2: #252C3E;
+$dark3: #1C1D48;
+$dark4: #101530;
+
+$grey1: #EAECF0;
+$grey2: #6B8399;
+$grey3: #C8D5DE;
+$grey4: #CCD2D6;
+$grey5: #1C1D48;
+$grey6: #E7E7E7;
+$grey7: #C4C4C4;
+$grey8: #c2c0c0;
+$grey9: #A6B7C7;
+$grey10: #DEDCDC;
+$grey11: #708190;
+
+$purple: #F6F5FF;
+
+$yellow: #FFCE62;
+
+$burgundy: #AA2186;
+
+$orange2: #F26A35;
+$orange3: #EA673A;
+$orange4: #FF9D9D;
+
+$red1: #EC5D5D;
+$red2: #CB3636;
+
+$green1: #00B58F;
+$green0: #D8F0EB;
+// borders
+
+$input-border: 1px solid $grey3;
+
+$checkbox-border: 1px solid $blue1;
+$edit-msg-border: 1px solid $grey9;
+$textarea-msg-border: 2px solid $blue1;
+$checkCardBorder: 2px solid $grey2;
+$fileBorder: 2px dashed $grey3;
+$borderGreen: 1px solid $green1;
+// upload bar
+$bar-color: $grey7;
+$bar-child-color: $green1;
+
+// spaces
+$leftSpaceForAsideMenu: 270px;
+
+// loading spinner
+$spinnerColor: $white2;

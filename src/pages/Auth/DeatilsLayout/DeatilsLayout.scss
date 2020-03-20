@@ -1,0 +1,36 @@
+@import '../../../scss/mixin', '../../../scss/variables';
+.step-dots {
+  @include flex();
+  &__item {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 15px;
+    background-color: rgba($color: $dark3, $alpha: .2);
+    &_active {
+      background-color: $orange3;
+    }
+  }
+}
+.form_short {
+  .justify-holder {
+    flex-grow: 1;
+    padding-right: 3.2rem;
+  }
+  .link {
+    font-size: $text-s;
+    font-weight: $fw7;
+    letter-spacing: 1px;
+  }
+}
+.back {
+  @include flex($align: center);
+  font-weight: $fw7;
+  font-size: $text-s;
+  text-transform: uppercase;
+  color: $blue1;
+}
+.icon-back {
+  margin-right: 8px;
+}

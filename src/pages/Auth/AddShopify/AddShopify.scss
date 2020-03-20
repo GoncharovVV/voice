@@ -1,0 +1,25 @@
+@import '../../../scss/variables', '../../../scss/mixin';
+.shop-icon {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+.form__bottom_shopify {
+  line-height: 1.8;
+}
+.fake-input {
+  background: $white2;
+  font-size: $text-m;
+  color: $dark0;
+  font-weight: $fw4;
+  border: 0;
+  text-align: right;
+  flex-grow: 1;
+}
+.shopify__text {
+  color: $blue1;
+  font-size: $text-m;
+  flex-shrink: 0;
+}
+.input__holder_shopify {
+  @include flex($align: baseline, $just: flex-end);
+}

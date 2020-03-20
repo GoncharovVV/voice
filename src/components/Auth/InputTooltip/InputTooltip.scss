@@ -1,0 +1,45 @@
+@import '../../scss/mixin', '../../scss/variables';
+.tooltip__holder {
+  position: relative;
+}
+.tooltip__text-holder {
+  position: absolute;
+  max-width: calc(100% - 4rem);
+  top: 3.8rem;
+  left: 2rem;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+
+}
+input:focus + .tooltip__text-holder {
+  animation: show-tooltip 3s ease-in-out;
+}
+.tooltip__text {
+  background: $dark1;
+  border-radius: 3px;
+  position: relative;
+  font-size: $text-s;
+  color: $white1;
+  padding: 6px 8px;
+  &::before {
+    position: absolute;
+    content: '';
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid $dark1;
+  }
+}
+@keyframes show-tooltip {
+  20% { opacity: 1;
+    visibility: visible; }
+  100% { opacity: 0;
+    visibility: hidden;}
+ }

@@ -1,0 +1,14 @@
+@import '../../scss/variables', '../../scss/mixin';
+.main-top {
+  &__row {
+    margin-bottom: 2rem;
+    @include flex($align: flex-end);
+  }
+  &__left {
+    padding-top: 4.7rem;
+    flex-grow: 1;
+    @include max-screen(1150px) {
+      padding-top: 0;
+    }
+  }
+}
